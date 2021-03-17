@@ -1,0 +1,211 @@
+#logo {
+    margin-top: 30px;
+    width: 50px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #F4F7F6;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    background: #1D1D1D;
+    color: white;
+    padding-bottom: 30px;
+}
+
+h1 {
+    font-family: 'theblacklist', arial;
+    margin-top: 0;
+    color: #00b894;
+    padding-top: 30px
+}
+
+.separator {
+    width: 40px;
+    height: 1px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background: #ffa801;
+}
+
+.contener {
+    width: 80%;
+    margin: auto;
+}
+
+h2 {
+    font-family: 'Lobster Two', cursive;
+    font-size: 1.5em;
+    width: 400px;
+    color: #00b894;
+    margin: auto;
+}
+
+h3:before {
+    content: "“ ";
+    color: #00b894;
+}
+
+h3 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+h3:after {
+    content: " ”";
+    color: #00b894;
+}
+
+section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    padding: 0px;
+    display: inline;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+    margin: 10px;
+}
+
+li:hover {
+    font-weight: bold;
+}
+
+a[title="contact"] {
+    display: block;
+}
+
+nav {
+    text-align: center;
+    background: white;
+    box-shadow: 0px 3px 1px -1px rgba(0, 0, 0, 0.5);
+    font-size: 1.1em;
+    padding: 15px;
+}
+
+.me-contacter {
+    border: 1px black solid;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+footer {
+    background: #1D1D1D;
+    color: white;
+    border: 1px black solid;
+    text-align: center;
+    padding: 15px
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/*-- Mes projets --*/
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#picture-project img {
+    width: 70%;
+}
+
+.projet {
+    width: 400px;
+    margin: 30px;
+    display: inline-block;
+    background: white;
+    padding-bottom: 15px;
+    border: 0px black solid;
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.projet:hover {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    transition: 0.4s;
+}
+
+.projet img {
+    min-width: 400px;
+    height: 266px;
+}
+
+.projet span {
+    text-transform: uppercase;
+    display: block;
+}
+
+.projet .date-project {
+    font-size: 0.7em;
+}
+
+.photo {
+    width: 400px;
+    height: 266px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.photo-profil {
+    margin-bottom: 0px;
+    height: 100%;
+}
+
+.photo-nature {
+    height: 500px;
+}
+
+@font-face {
+    font-family: 'theblacklist';
+    src: url('../src/theblacklist.ttf') format('truetype');
+}
+
+
+/*--Responsive design--*/
+
+@media all and (max-width: 1000px) {
+    body {
+        font-size: 25px;
+    }
+    .projet {
+        width: 100%;
+        margin: 15px auto
+    }
+    .projet img {
+        width: 100%;
+        min-width: auto;
+        height: auto;
+    }
+    .projet .photo {
+        width: 100%;
+        height: auto;
+    }
+    header h2 {
+        width: 90%
+    }
+    .me-contacter {
+        padding: 0px
+    }
+}
